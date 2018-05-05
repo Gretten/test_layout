@@ -155,8 +155,9 @@ ul {
   font-weight: normal;
 }
 .body-slides {
-  height: 708px;
-  width: 100%;
+  height: auto;
+  min-height: 700px;
+  max-width: 744px;
   background-color: #ffff99;
 }
 .body-scroller {
