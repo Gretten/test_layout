@@ -22,7 +22,7 @@
 /* Universal tag styles*/
 
 html {
-  font-family: Arial, 'Segoe UI', Segoe, Tahoma, sans-serif;
+  font-family: Arial;
   font-size: 1rem;
   line-height: 1.44;
 }
@@ -68,7 +68,6 @@ ul {
 .footer,
 .menu {
   color: #fff;
-  background-color: #666;
   -webkit-transition: font-size 0.5s linear;
           transition: font-size 0.5s linear;
 }
@@ -79,44 +78,78 @@ ul {
   -webkit-justify-content: center;
           justify-content: center;
   align-items: center;
+  background-image: url(/img/Layer.png);
 }
 
 .include {
   height: 100px;
   width: 970px;
   margin-right: 28px;
-  margin-left: 28px;
+  margin-left: 38px;
   display: flex;
   justify-content: space-between;
-  .bcg(yellow);
+
 }
 
 .logo {
-  width: 340px;
+  width: 280px;
   height: 100%;
-  .bcg(red);
+  padding-left: 61px;
+  padding-right: 0;
+  position: relative;
+}
+
+.logo > h1 {
+  font-size: 30.57px;
+  color: black;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.logo::before {
+  .hw(50px, 50px);
+  content: "";
+  background: url(/img/logo_img.png) no-repeat;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+}
+
+.logo > h1 > span {
+  color: silver;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+  display: inline-block;
+  position: absolute;
+  left: 61px;
+  bottom: 20px;
 }
 
 .email {
   width: 230px;
   height: 100%;
-  .bcg(red);
+  .test;
 }
 
 /* Horysontal menu */
 
 .menu {
-  height: 50px;
+  height: 40px;
   margin: 0;
- .bcg(red);
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
   padding: 0;
+  background: linear-gradient(to bottom, #444444, #333333);
 }
 
 .menu > ul {
   display: flex;
+  color: white;
 }
 
 .menu > ul > li {
@@ -127,6 +160,11 @@ ul {
   flex-wrap: nowrap;
   flex-shrink: 0;
 }
+
+.menu > ul > li > a {
+  color: white;
+}
+
 
 /* left column navigation */
 
