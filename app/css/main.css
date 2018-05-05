@@ -1,7 +1,7 @@
 /* LESS mixins*/
 /* Universal tag styles*/
 html {
-  font-family: 'Segoe UI', Segoe, Tahoma, sans-serif;
+  font-family: Arial, 'Segoe UI', Segoe, Tahoma, sans-serif;
   font-size: 1rem;
   line-height: 1.44;
 }
@@ -143,7 +143,6 @@ ul {
   height: auto;
   max-width: 722px;
   margin-bottom: 30px;
-  background-color: #ff9999;
 }
 .body-header h1 {
   font-size: 26px;
@@ -175,16 +174,59 @@ ul {
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
-  background-color: #ff9999;
 }
 .slide {
   width: 224px;
   height: 320px;
-  background-color: #ffff99;
+  border: 1px solid silver;
+  border-radius: 3px;
+  font-family: Arial;
+}
+.slide-inner {
+  height: 100%;
+  width: 160px;
+  text-align: center;
+  margin: 0 auto;
 }
 .slide h1 {
   font-size: 14px;
   font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.photo {
+  width: 159px;
+  height: 141px;
+  background: #ebebeb;
+}
+.slide p {
+  font-size: 12px;
+  display: inline-block;
+  word-wrap: break-word;
+  max-width: 100px;
+}
+.price {
+  color: #288f21;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+.price span {
+  font-size: 16px;
+}
+.slide button {
+  margin-top: 15px;
+  border-radius: 3px;
+  width: 75px;
+  height: 25px;
+  font-size: 12px;
+  background: #c4c4c3;
+  outline-style: none;
+  border: 0;
+  color: white;
+  background-image: linear-gradient(90deg, #41b039 100%, #4ecf44 100%);
+  box-shadow: 0 2px 2px 0 silver;
 }
 .body-scroller {
   height: 30px;
