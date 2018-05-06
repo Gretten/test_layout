@@ -129,10 +129,68 @@ ul {
   bottom: 20px;
 }
 
-.email {
+.contacts {
   width: 230px;
   height: 100%;
-  .test;
+  font-size: 14px;
+  color: #54944d;
+  text-align: right;
+  position: relative;
+}
+
+.contacts > * {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts span {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contacts p:nth-child(1)::after {
+  content: "звонок бесплатный";
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  color: #7a7a7a;
+  font-size: 12px;
+  .hw(20px, 150px);
+};
+
+.contacts p:nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.social {
+  .hw(26px, 145px);
+  float: right;
+}
+
+.social-buttons {
+  display: inline-block;
+  margin-right: 4px;
+  .hw(25px, 25px);
+  background: silver;
+}
+
+.vk {
+  background: url(/img/sociall.png) -38px;
+}
+
+.fb {
+  background: url(/img/sociall.png) -71px;
+}
+
+.tw {
+  background: url(/img/sociall.png) -104px;
+}
+
+.goo {
+  margin-right: 0;
+  background: url(/img/sociall.png) -136px;
 }
 
 /* Horysontal menu */
@@ -195,6 +253,8 @@ ul {
   min-height: 100px;
 }
 
+
+
 .categories {
   max-height: 500px;
 }
@@ -212,13 +272,21 @@ ul {
 }
 
 .nav-header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: 35px;
   background-color: #41b039;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .nav-body {
   
 }
+
+// Main section
 
 .section {
   -webkit-flex: auto;
