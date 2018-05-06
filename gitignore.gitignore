@@ -1,0 +1,5 @@
+*.log
+*.json
+node_modules/
+dist/
+gulpfile.js

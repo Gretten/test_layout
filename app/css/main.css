@@ -110,7 +110,7 @@ ul {
   font-weight: bold;
 }
 .contacts p:nth-child(1)::after {
-  content: "звонок бесплатный";
+  content: "Lorem ipsum";
   position: absolute;
   left: 80px;
   top: 20px;
@@ -186,6 +186,7 @@ ul {
 .basket,
 .catalog,
 .categories {
+  width: 200px;
   width: 220px;
   margin-bottom: 20px;
   position: relative;
@@ -218,7 +219,7 @@ form {
   position: relative;
 }
 form::after {
-  content: "Введите название товара";
+  content: "Lorem ipsum";
   position: absolute;
   font-size: 12px;
   font-family: "Arial";
@@ -296,6 +297,11 @@ input {
   background-color: #41b039;
   color: white;
   font-size: 15px;
+  font-weight: bold;
+  padding-left: 41px;
+  padding-top: 5px;
+}
+.nav-body {
   font-weight: bold;
   padding-left: 38px;
   padding-top: 7px;
