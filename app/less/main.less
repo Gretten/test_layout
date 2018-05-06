@@ -32,6 +32,10 @@ body {
   font-size: 1.75rem;
 }
 
+main {
+  background: url(/img/background.png);
+}
+
 a {
   text-decoration: none;
   font-size: 14px;
@@ -240,23 +244,106 @@ ul {
 .basket,
 .catalog,
 .categories {
-  width: 200px;
+  width: 220px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .basket {
   margin-top: 20px;
   min-height: 87px;
+  position: relative;
+}
+
+.basket-inner {
+  .hw(35px, 200px);
+  position: absolute;
+  top: 42px;
+  left: 9px;
+  font-size: 14px;
+}
+
+.basket-inner > p {
+  padding: 0;
+  margin: 0;
 }
 
 .catalog {
   min-height: 100px;
 }
 
+form {
+  position: relative;
+  width: 183px;
+  margin-left: 10px;
+  margin-top: 2px;
+  box-sizing: borer-box;
+  position: relative;
+}
 
+form::after {
+  content: "Введите название товара";
+  position: absolute;
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(153, 153, 153);
+  line-height: 1.833;
+}
+
+input, button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid silver;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+  color: black;
+  font-size: 14px;
+}
+
+.nav-body > form > button {
+  height: 20px;
+  width: 50px;
+  position: absolute;
+  top: 14px;
+  right: -8px;
+  cursor: pointer;
+  font-size: 12px;
+}
 
 .categories {
   max-height: 500px;
+}
+
+.basket::before {
+  content: "";
+  .hw(16px, 16px);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url(/img/buttons.png) -131px;
+}
+
+.catalog::before {
+  content: "";
+  .hw(16px, 16px);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url(/img/buttons.png) -26px;
+}
+
+.categories::before {
+  content: "";
+  .hw(16px, 16px);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url(/img/buttons.png) -80px;
 }
 
 .nav-body-links ul {
@@ -279,11 +366,9 @@ ul {
   background-color: #41b039;
   color: white;
   font-size: 15px;
-  font-weight: bold;
-}
-
-.nav-body {
-  
+  font-weight: bold; 
+  padding-left: 38px;
+  padding-top: 7px;
 }
 
 // Main section
